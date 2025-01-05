@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic HTML - Reveal Content</title>
+    <style>
+        #hiddenMessage {
+            display: none;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Web Page</h1>
+    <p>Click the button below to reveal the hidden message:</p>
+    <button onclick="revealMessage()">Show Message</button>
+    <p id="hiddenMessage">🎉 Surprise! This is your hidden message. 🎉</p>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('hiddenMessage');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
